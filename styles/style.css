@@ -1,0 +1,412 @@
+@font-face {
+  font-family: "Font Awesome";
+  src: url(../fonts/fontawesome-webfont.woff);
+}
+body {
+  background: linear-gradient(to left, #00396d, #006d76);
+  background-size: 150%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 20% 29.5% 7.2% 19.9% 15.8%;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  min-width: 1100px;
+}
+.grid .one {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  min-width: 660px;
+  font-size: 0;
+}
+.grid .one img {
+  width: 100%;
+  height: 88%;
+}
+.grid .one .slide_two {
+  display: none;
+}
+.grid .one .slide-menu {
+  width: 100%;
+  height: 35px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+}
+.grid .one .slide-menu .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #00bbb8;
+  display: inline-block;
+  margin-top: 10px;
+}
+.grid .one .slide-menu .dot:hover {
+  background-color: #00bbb8;
+}
+.grid .one .slide-menu a:first-child,
+.grid .one .slide-menu a:last-child {
+  position: absolute;
+  display: inline-block;
+  left: 4px;
+  top: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 31px;
+  font-family: "Font Awesome";
+}
+.grid .one .slide-menu a:last-child {
+  right: 4px;
+  left: auto;
+  z-index: 1;
+}
+.grid .one .slide-menu:before,
+.grid .one .slide-menu:after {
+  content: '';
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  background-color: #00bbb8;
+  left: 0;
+  top: 0;
+}
+.grid .one .slide-menu:after {
+  left: auto;
+  right: 0;
+}
+.grid .two {
+  grid-column: 4 / 5;
+  grid-row: 1;
+  min-width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.grid .two a {
+  font-size: 0;
+  width: 50%;
+  height: 43%;
+  text-align: center;
+}
+.grid .two a:hover img {
+  width: 91%;
+  transition: .3s;
+}
+.grid .two a img {
+  width: 88%;
+}
+.grid .three {
+  grid-column: 5 / 6;
+  grid-row: 1;
+  font-size: 0;
+  min-width: 205px;
+}
+.grid .three img {
+  width: 100%;
+}
+.grid .three div {
+  background-color: white;
+  width: 100%;
+}
+.grid .three div p:first-child {
+  color: #7e7e7e;
+  font-size: 10px;
+  font-family: arial;
+  line-height: 18px;
+}
+.grid .three div p:nth-child(2) {
+  color: #a9f3e6;
+  font-size: 9px;
+  font-family: arial;
+  line-height: 19px;
+}
+.grid .three div a {
+  text-align: center;
+  font-family: "Font Awesome";
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  line-height: 27px;
+  background-color: #03b1b3;
+  width: 32.9%;
+  display: inline-block;
+  border-right: 1px solid white;
+}
+.grid .three div a:last-child {
+  border-right: none;
+}
+.grid .three div a:hover {
+  color: black;
+}
+.grid .four {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  background-color: white;
+  min-width: 715px;
+}
+.grid .four nav {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+}
+.grid .four nav > a {
+  padding: 42px 20px;
+  border-right: 1px solid lightgray;
+  background-color: white;
+  font-size: 18px;
+  font-family: arial;
+  text-decoration: none;
+  color: black;
+}
+.grid .four nav > a:hover {
+  background-color: lightgray;
+}
+.grid .four span {
+  margin-left: 35px;
+}
+.grid .four span input {
+  font-size: 18px;
+}
+.grid .four span a {
+  font-size: 20px;
+  font-family: "Font Awesome";
+  padding-left: 20px;
+  text-decoration: none;
+  color: black;
+}
+.grid .five {
+  grid-column: 5 / 6;
+  grid-row: 2 / 4;
+}
+.grid .five ul li {
+  background-color: white;
+  padding: 9px;
+  border-bottom: 1px solid gray;
+}
+.grid .five ul li:first-child {
+  background-color: #03b1b3;
+}
+.grid .five ul li:first-child a {
+  color: white;
+}
+.grid .five ul li:last-child {
+  background-color: #03b1b3;
+}
+.grid .five ul li:last-child a {
+  color: white;
+}
+.grid .five ul li:hover {
+  background-color: lightgray;
+}
+.grid .five ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: arial;
+  color: black;
+}
+.grid .six {
+  grid-column: 1;
+  grid-row: 3 / 6;
+  background-color: white;
+  text-align: center;
+}
+.grid .six img {
+  width: 50%;
+  margin-top: 25px;
+}
+.grid .six p {
+  font-size: 20px;
+  font-family: arial;
+  color: black;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.grid .six span {
+  font-size: 15px;
+  font-family: arial;
+  color: #00b4b4;
+}
+.grid .six a {
+  display: block;
+  background-color: #00b4b4;
+  text-decoration: none;
+  margin: 25px auto;
+  width: 50%;
+  color: white;
+  padding: 10px 20px;
+  line-height: 29px;
+  font-size: 20px;
+}
+.grid .six a:hover span {
+  font-size: 35px;
+}
+.grid .six a span {
+  font-size: 30px;
+  padding-left: 15px;
+  font-family: "Font Awesome";
+  color: white;
+  vertical-align: bottom;
+}
+.grid .seven {
+  grid-column: 2;
+  grid-row: 3 / 5;
+}
+.grid .eight {
+  grid-column: 3 / 5;
+  grid-row: 3 / 6;
+}
+.grid .eight img {
+  width: 100%;
+  height: 340px;
+}
+.grid .nine {
+  grid-column: 5;
+  grid-row: 4 / 6;
+}
+.grid .nine li {
+  color: black;
+  font-family: arial;
+  font-size: 20px;
+  background-color: white;
+  padding: 14px 10px;
+  border-bottom: 1px solid gray;
+}
+.grid .nine li input {
+  width: 95%;
+}
+.grid .nine .chk {
+  vertical-align: top;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #02cac2;
+  position: relative;
+  margin-left: 25px;
+}
+.grid .nine .chk .chk1 {
+  left: 25px;
+}
+.grid .nine .chk div {
+  transition: .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+.grid .ten {
+  grid-column: 1;
+  grid-row: 6 / 7;
+}
+.grid .ten ul li {
+  background-color: white;
+  padding: 9px;
+  border-bottom: 1px solid gray;
+}
+.grid .ten ul li:hover {
+  background-color: lightgray;
+}
+.grid .ten ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: arial;
+  color: black;
+}
+.grid .eleven {
+  grid-column: 2;
+  grid-row: 5 / 7;
+  background-color: white;
+}
+.grid .eleven ul li {
+  background-color: white;
+  padding: 9px;
+  width: 95%;
+  margin: 30px auto;
+  margin-bottom: 30px;
+}
+.grid .eleven ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: arial;
+}
+.grid .eleven ul li:first-child {
+  background-color: rgba(0, 139, 0, 0.3);
+}
+.grid .eleven ul li:first-child a {
+  color: green;
+}
+.grid .eleven ul li:nth-child(2) {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+.grid .eleven ul li:nth-child(2) a {
+  color: #0000ff;
+}
+.grid .eleven ul li:nth-child(3) {
+  background-color: rgba(255, 165, 0, 0.3);
+}
+.grid .eleven ul li:nth-child(3) a {
+  color: #ffa500;
+}
+.grid .eleven ul li:last-child {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.grid .eleven ul li:last-child a {
+  color: #FF0000;
+}
+.grid .twelve {
+  grid-column: 3 / 6;
+  grid-row: 6 / 7;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.grid .twelve input {
+  width: 40%;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  height: 35px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: arial;
+}
+.grid .twelve input:nth-child(4) {
+  width: 25%;
+}
+.grid .twelve p {
+  display: inline-block;
+  line-height: 37px;
+  width: 56%;
+  font-family: arial;
+  font-size: 15px;
+  color: #FF0000;
+  background-color: rgba(255, 0, 0, 0.3);
+  border: 1px solid #FF0000;
+  margin-top: 15px;
+  height: 40px;
+  text-align: center;
+}
+.grid .twelve textarea {
+  resize: none;
+  width: 69%;
+  height: 60px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: arial;
+}
+.grid .twelve a {
+  text-decoration: none;
+  font-family: arial;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  background-color: #03b1b3;
+  height: 20px;
+}
