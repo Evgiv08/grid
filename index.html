@@ -9,16 +9,23 @@
 </head>
 <body>
 	<div class="grid">
-		<div class="one">
-			<img src="img/average.jpg" alt="Мстители" id="slide_one" class="slide_one">
-			<img src="img/average3.jpg" alt="Мстители" id="slide_two" class="slide_two">
-			<div class="slide-menu">
-				<a href="#" id="prew"></a>
-				<a href="#" class="dot"></a>
-				<a href="#" class="dot"></a>
-				<a href="#" class="dot"></a>
-				<a href="#" id="next"></a>
-			</div>
+		<div id="block-for-slider" class="one">
+			<div id="viewport">
+				<ul id="slidewrapper">
+	                <li class="slide"><img src="img/average.jpg" alt="1" class="slide-img"></li>
+	                <li class="slide"><img src="img/average2.jpg" alt="2" class="slide-img"></li>
+	                <li class="slide"><img src="img/average3.jpg" alt="3" class="slide-img"></li>
+            	</ul>
+	            <div id="prev-next-btns">
+	                <div id="prev-btn"></div>
+	                <div id="next-btn"></div>
+		            <ul id="nav-btns">
+		                <li class="slide-nav-btn"></li>
+		                <li class="slide-nav-btn"></li>
+		                <li class="slide-nav-btn"></li>
+		            </ul>
+		        </div>
+			</div>	
 		</div>
 		<div class="two">
 			<a href="#"><img src="img/twitter.png" alt="Логотип Твитер"></a>

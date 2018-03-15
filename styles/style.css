@@ -19,49 +19,69 @@ body {
   min-width: 660px;
   font-size: 0;
 }
-.grid .one img {
+.grid .one #block-for-slider {
   width: 100%;
-  height: 88%;
 }
-.grid .one .slide_two {
-  display: none;
+.grid .one #viewport {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  text-align: center;
 }
-.grid .one .slide-menu {
+.grid .one #slidewrapper {
+  position: relative;
+  width: calc(400%);
+  height: 87%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1);
+  -o-transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1);
+  transition-timing-function: cubic-bezier(0.67, 0.01, 0.23, 1);
+}
+.grid .one .slide {
+  width: calc(25%);
+  height: 100%;
+  list-style: none;
+  display: inline;
+  float: left;
+}
+.grid .one .slide-img {
+  width: 100%;
+  height: 100%;
+}
+.grid .one #prev-btn:hover,
+.grid .one #next-btn:hover {
+  cursor: pointer;
+}
+.grid .one #prev-next-btns {
   width: 100%;
   height: 35px;
   background-color: white;
   position: relative;
-  text-align: center;
 }
-.grid .one .slide-menu .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 1px solid #00bbb8;
-  display: inline-block;
-  margin-top: 10px;
-}
-.grid .one .slide-menu .dot:hover {
-  background-color: #00bbb8;
-}
-.grid .one .slide-menu a:first-child,
-.grid .one .slide-menu a:last-child {
+.grid .one #prev-next-btns #prev-btn,
+.grid .one #prev-next-btns #next-btn {
   position: absolute;
-  display: inline-block;
   left: 4px;
   top: 2px;
   color: white;
-  text-decoration: none;
   font-size: 31px;
   font-family: "Font Awesome";
 }
-.grid .one .slide-menu a:last-child {
+.grid .one #prev-next-btns #next-btn {
   right: 4px;
   left: auto;
   z-index: 1;
 }
-.grid .one .slide-menu:before,
-.grid .one .slide-menu:after {
+.grid .one #prev-next-btns:before,
+.grid .one #prev-next-btns:after {
   content: '';
   width: 35px;
   height: 35px;
@@ -70,9 +90,20 @@ body {
   left: 0;
   top: 0;
 }
-.grid .one .slide-menu:after {
+.grid .one #prev-next-btns:after {
   left: auto;
   right: 0;
+}
+.grid .one #prev-next-btns .slide-nav-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #00bbb8;
+  display: inline-block;
+  margin: 10px 3px;
+}
+.grid .one #prev-next-btns .slide-nav-btn:hover {
+  background-color: #00bbb8;
 }
 .grid .two {
   grid-column: 4 / 5;
